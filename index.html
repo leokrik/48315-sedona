@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-	<header>
-		<nav class="main-navigation">
-			<ul class="main-navigation-left">
-			<li><a href="#">Информация</a></li>
-			<li><a href="#">Фото и видео</a></li>
-			</ul>
-			<!--Как лучше сделать одно меню и вставить логотип по центру? Margin и у логотипа сменить позиционирование? Или два меню-->
-			<ul class="main-navigation-right">
-			<li><a href="#">Карта штата</a></li>
-			<li><a href="#">Гостиницы</a></li>
-			</ul>
-		</nav>
-		
-		<a href="#"><img src="img/logo.png" alt="Sedona логотип" width="138" height="70"></a>
-	</header>
-	
-	<section class="intro">
-	<!--Не отображается картинка в SVG 
-	<img src="img/logo.svg" alt="Sedona логотип" width="138" height="70">
-	но вставляется через код
-	-->
-	
-		<svg>welcome</svg>
-		<svg>to the gorgeous</svg>
-		<svg>Sedona</svg>
-		<svg>Because the Grand  Canyon sucks!</svg>
-	</section>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+	</head>
+	<body>
+		<header>
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="#">Гостиницы</a></li>
+				</ul>
+			</nav>
+			
+			<a href="#"><img src="img/logo.png" alt="Sedona логотип" width="138" height="70"></a>
+		</header>
+
+		<section class="intro">
+		<!--Не отображается картинка в SVG 
+		<img src="img/logo.svg" alt="Sedona логотип" width="138" height="70">
+		но вставляется через код
+		-->
+		<img src="img/intro-img.png" alt="Добро пожаловать в Седону" width="458px" height="352px"></img>
+		<img src="img/intro-shape.png" alt="Добро пожаловать в Седону" width="1200" height="57px"></img>	
+		</section>
 		<main class="container">
 			<span>
 				Седона — небольшой городок в Аризоне,  заслуживающий большего! 
 			</span>
 			<h1>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h1>
 			
-			<section class="line-advantages">
-				<div class="data-advantages">
+			<section class="advantages-line">
+				<div class="advantages-data">
 					<h2>Настоящий городок</h2>
 					<p>— №1 —</p>
 					<p>Седона -  не аттраццион для туристов, там течет своя жизнь</p>
 								
 				</div>
-				<img></img>
-				<ul>
-					<li>
-						<h3>Жилье</h3>
-						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-					</li>
-					<li>
-						<h3>Еда</h3>
-						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-					</li>
-					<li>
-						<h3>Сувениры</h3>
-						<p>Не только китайского, но и местного производства!</p>
-					</li>
-				</ul>
+				<div class="advantages-img advantages-img-right">
+					<img src="img/advantages-right.jpg" alt="Седона - настойщий город" width="800" height="256"></img>
+				</div>
+				<div class="advantages-item">
+					<ul>
+						<li>
+							<h3>Жилье</h3>
+							<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+						</li>
+						<li>
+							<h3>Еда</h3>
+							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</li>
+						<li>
+							<h3>Сувениры</h3>
+							<p>Не только китайского, но и местного производства!</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 			
-			<section class="line-advantages">
-				<div class="data-advantages">
+			<section class="advantages-line">
+				<div class="advantages-data">
 					<h2>Там есть мост дьявола</h2>
 					<p>— №2 —</p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитись</p>
 						
 				</div>
-				<img></img>
+				<div class="advantages-img advantages-img-left">
+					<img src="img/advantages-left.jpg" alt="Седона. Мост дьявола" width="800" height="256"></img>
+				</div>
 			</section>
 			
 			<ul>
@@ -90,39 +90,37 @@
 				</li>
 			</ul>
 			
-			<article class=article-booking>
-				<h1>Заинтересовались?</h1>
+			<section class="booking-section">
+				<h3>Заинтересовались?</h3>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 				<button class="btn-booking">поиск гостиницы в седоне</button>
-			</article>
 			
-			<form action="" method="post" name="form-booking">
-				<label>
-					Дата заезда:
-					<input type="date" name="date-checkin" value="" placeholder="08.10.2017">
-				</label>
-				<label>
-					Дата Выезда:
-					<input type="date" name="date-checkout" value="" placeholder="08.10.2017">
-				</label>
-				<label>
-					Взрослые:
-					<input type="number" name="count-adults" value="" placeholder="1">
-				</label>
-				<label>
-					Дети:
-					<input type="number" name="count-children" value="" placeholder="0">
-				</label>
-				<input type="submit" value="Найти">
-			</form>
+			
+				<form action="" method="post" name="booking-form">
+					<label>
+						Дата заезда:
+						<input type="date" name="date-checkin" value="" placeholder="08.10.2017">
+					</label>
+					<label>
+						Дата Выезда:
+						<input type="date" name="date-checkout" value="" placeholder="08.10.2017">
+					</label>
+					<label>
+						Взрослые:
+						<input type="number" name="count-adults" value="" placeholder="1">
+					</label>
+					<label>
+						Дети:
+						<input type="number" name="count-children" value="" placeholder="0">
+					</label>
+					<input type="submit" value="Найти">
+				</form>
+			</section>
 		</main>
 		<footer>
-		
-			
 			<div class="footer-tag">
 				<span>#visitsedona</span>
 			</div>
-			
 			<div class="social-btn">
 				<ul>
 					<li><a href="#"><span>Twitter</span></a></li>
@@ -130,14 +128,10 @@
 					<li><a href="#"><span>Youtube</span></a></li>
 				</ul>
 			</div>
-			
 			<div class="footer-copyright">
 				<span>website by</span><a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.png" width="115px" height="41px"></a>
 			</div>
-		
+			
 		</footer>
-		
-		
-
-  </body>
+	</body>
 </html>

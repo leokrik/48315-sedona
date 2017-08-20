@@ -1,22 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-	<header>
-		<nav class="main-navigation">
-			<ul class="main-navigation-left">
-			<li><a href="#">Информация</a></li>
-			<li><a href="#">Фото и видео</a></li>
-			</ul>
-			<!--Как лучше сделать одно меню и вставить логотип по центру? Margin и у логотипа сменить позиционирование? Или два меню-->
-			<ul class="main-navigation-right">
-			<li><a href="#">Карта штата</a></li>
-			<li><a href="#">Гостиницы</a></li>
-			</ul>
-		</nav>
-		
-		<a href="#"><img src="img/logo.png" alt="Sedona логотип" width="138" height="70"></a>
-	</header>
+	<body>
+		<header>
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="#">Гостиницы</a></li>
+				</ul>
+			</nav>
+			
+			<a href="#"><img src="img/logo.png" alt="Sedona логотип" width="138" height="70"></a>
+		</header>
+		<main>
+			<section class="filter">
+				<form>
+					<div class="filter-type">
+						<span>Инфраструктура:</span><br>
+						<label>
+							<input type="checkbox" name="pool">
+							Бассейн
+						</label><br>
+						<label>
+							<input type="checkbox" name="parking">
+							Парковка
+						</label><br>
+						<label>
+							<input type="checkbox" name="wifi">
+							Wi-Fi
+						</label><br>
+					</div>
+					
+					<div class="filter-type">
+						<span>Тип жилья:</span><br>
+						<label>
+							<input type="checkbox" name="hotel">
+							Гостиница
+						</label><br>
+						<label>
+							<input type="checkbox" name="motel">
+							Мотель
+						</label><br>
+						<label>
+							<input type="checkbox" name="apartment">
+							Апартаменты
+						</label><br>
+					</div>
+					<div class="filter-range">
+						<span>Стоимость в сутки (Р):</span><br>
+						<div class="cost-from-to">
+							<span>От</span>
+							<span class="cost-from">0</span>
+							<span>До</span>
+							<span class="cost-from">3000</span>
+						</div>
+						<input type="range" min="0" max="3000" step="100" value="1500"><br>
+						<input type="submit" value="Показать">
+						
+					</div>	
+				</form>
+				
+			</section>
+		</main>
+	</body>
+</head>
